@@ -1,0 +1,599 @@
+# Copyright (C) 2026 Christopher Ross
+# This file is distributed under the GNU General Public License v2 or later.
+msgid ""
+msgstr ""
+"Project-Id-Version: Quillwork 1.0.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/theme/quillwork\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2026-05-26T21:08:42+00:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.12.0\n"
+"X-Domain: quillwork\n"
+
+#. Theme Name of the theme
+#: style.css
+msgid "Quillwork"
+msgstr ""
+
+#. Theme URI of the theme
+#: style.css
+msgid "https://thisismyurl.com/themes/quillwork"
+msgstr ""
+
+#. Description of the theme
+#: style.css
+msgid "An elegant, literary full-site-editing theme for writers, editors, and personal brands. Light Cormorant Garamond display headlines with italic accents, a calm Newsreader reading column, deep-teal and warm-ochre palette on a cream ground, numbered service cards, and gentle float accents that respect reduced-motion. Zero plugin dependencies, WCAG 2.2 AA accessible, Core Web Vitals optimised, self-hosted OFL fonts, RTL-ready via CSS logical properties."
+msgstr ""
+
+#. Author of the theme
+#: style.css
+msgid "Christopher Ross"
+msgstr ""
+
+#. Author URI of the theme
+#: style.css
+msgid "https://thisismyurl.com"
+msgstr ""
+
+#: inc/bindings.php:41
+msgid "Copyright line"
+msgstr ""
+
+#: inc/bindings.php:50
+msgid "Footer credit line"
+msgstr ""
+
+#. translators: 1: four-digit year, 2: site title.
+#: inc/bindings.php:69
+#, php-format
+msgid "© %1$s %2$s. All rights reserved."
+msgstr ""
+
+#. translators: %s: linked theme name ("Quillwork").
+#: inc/bindings.php:102
+#, php-format
+msgid "Built with the %s theme."
+msgstr ""
+
+#: inc/blocks.php:30
+msgid "Eyebrow"
+msgstr ""
+
+#: inc/blocks.php:39
+msgid "Service Card"
+msgstr ""
+
+#: inc/blocks.php:48
+msgid "Stat Block"
+msgstr ""
+
+#: inc/blocks.php:57
+msgid "Highlight"
+msgstr ""
+
+#: inc/blocks.php:74
+msgid "Quillwork: Pages"
+msgstr ""
+
+#: inc/blocks.php:75
+msgid "Full-page layout patterns for the editorial home and about pages."
+msgstr ""
+
+#: inc/blocks.php:82
+msgid "Quillwork: Sections"
+msgstr ""
+
+#: inc/blocks.php:83
+msgid "Hero, services, testimonials, and contact section patterns."
+msgstr ""
+
+#: inc/setup.php:50
+msgid "Primary Navigation"
+msgstr ""
+
+#: inc/setup.php:51
+msgid "Footer Navigation"
+msgstr ""
+
+#: inc/setup.php:163
+msgid "Skip to content"
+msgstr ""
+
+#: patterns/about-stats.php
+msgctxt "Pattern title"
+msgid "About + Stats — Two Column"
+msgstr ""
+
+#: patterns/about-stats.php
+msgctxt "Pattern description"
+msgid "A two-column section pairing an editorial bio with a coral-bordered pull-quote highlight beside a 2x2 grid of stat cards."
+msgstr ""
+
+#: patterns/about-stats.php:30
+msgid "Based in your region, serving clients everywhere"
+msgstr ""
+
+#: patterns/about-stats.php:34
+msgid "With a working knowledge of many industries and audiences, I bring clarity and craft to every project. Whether you are a new business finding your voice or an established one refining its message, the writing aligns with your goals."
+msgstr ""
+
+#: patterns/about-stats.php:38
+msgid "The approach pairs strategy with careful editing. Every piece is researched, revised, and shaped to serve both your objectives and your reader."
+msgstr ""
+
+#: patterns/about-stats.php:44
+msgid "Great content is not only keywords and conversions. It is the genuine connection that builds a lasting relationship with your audience."
+msgstr ""
+
+#: patterns/about-stats.php:62
+msgid "Projects completed"
+msgstr ""
+
+#: patterns/about-stats.php:73
+msgid "Happy clients"
+msgstr ""
+
+#: patterns/about-stats.php:84
+msgid "Industries served"
+msgstr ""
+
+#: patterns/about-stats.php:95
+msgid "Client satisfaction"
+msgstr ""
+
+#: patterns/contact.php
+msgctxt "Pattern title"
+msgid "Contact — Centred CTA"
+msgstr ""
+
+#: patterns/contact.php
+msgctxt "Pattern description"
+msgid "A centred contact band — heading, subtitle, two contact methods (email and location), and a single primary call to action."
+msgstr ""
+
+#: patterns/contact.php:24
+msgid "Let’s create something worth reading"
+msgstr ""
+
+#: patterns/contact.php:28
+msgid "Ready to sharpen your content? Get in touch to talk through the project and where words can do the most good."
+msgstr ""
+
+#: patterns/contact.php:37
+msgid "Email"
+msgstr ""
+
+#: patterns/contact.php:43
+msgid "Email me directly"
+msgstr ""
+
+#: patterns/contact.php:51
+msgid "Location"
+msgstr ""
+
+#: patterns/contact.php:54
+msgid "Your Region"
+msgstr ""
+
+#: patterns/contact.php:57
+msgid "Working with clients everywhere"
+msgstr ""
+
+#: patterns/contact.php:68
+msgid "Get in touch"
+msgstr ""
+
+#: patterns/front-page.php
+msgctxt "Pattern title"
+msgid "Front Page — Full Writer Portfolio"
+msgstr ""
+
+#: patterns/front-page.php
+msgctxt "Pattern description"
+msgid "The complete writer-portfolio home page, assembled in order — hero, numbered services, testimonials, about-and-stats, and a contact band — by referencing the five section patterns. Insert once for a finished home, then re-write each section to taste."
+msgstr ""
+
+#: patterns/hero.php
+msgctxt "Pattern title"
+msgid "Hero — Light Serif Headline"
+msgstr ""
+
+#: patterns/hero.php
+msgctxt "Pattern description"
+msgid "Full-bleed hero with a light Cormorant headline, an italic teal accent line, a calm ochre float accent, and a two-button call to action."
+msgstr ""
+
+#: patterns/hero.php:30
+msgid "Freelance Writer &middot; Your Region"
+msgstr ""
+
+#: patterns/hero.php:34
+msgid "Words that work."
+msgstr ""
+
+#: patterns/hero.php:34
+msgid "Content that converts."
+msgstr ""
+
+#: patterns/hero.php:38
+msgid "Marketing copy, long-form editorial, technical writing, and search-friendly content built to be read. Clear on the first pass and worth a second."
+msgstr ""
+
+#: patterns/hero.php:44
+msgid "Start a project"
+msgstr ""
+
+#: patterns/hero.php:47
+msgid "View services"
+msgstr ""
+
+#: patterns/services.php
+msgctxt "Pattern title"
+msgid "Services — Numbered Cards (4-up)"
+msgstr ""
+
+#: patterns/services.php
+msgctxt "Pattern description"
+msgid "A four-column grid of numbered service cards — large ghost-ochre numeral, serif title, descriptive paragraph, and an arrow-bulleted feature list, with a left-border accent on hover."
+msgstr ""
+
+#: patterns/services.php:27
+msgid "What I do"
+msgstr ""
+
+#: patterns/services.php:31
+msgid "Crafting content that elevates your brand"
+msgstr ""
+
+#: patterns/services.php:45
+msgid "Marketing content"
+msgstr ""
+
+#: patterns/services.php:48
+msgid "Persuasive copy that captures attention and prompts action. From landing pages to email campaigns, content that turns prospects into customers."
+msgstr ""
+
+#: patterns/services.php:52
+msgid "Landing pages and web copy"
+msgstr ""
+
+#: patterns/services.php:53
+msgid "Email marketing campaigns"
+msgstr ""
+
+#: patterns/services.php:54
+msgid "Product descriptions"
+msgstr ""
+
+#: patterns/services.php:55
+msgid "Brand messaging and voice"
+msgstr ""
+
+#: patterns/services.php:67
+msgid "Blog and editorial"
+msgstr ""
+
+#: patterns/services.php:70
+msgid "Informative posts that establish your authority and connect with readers. Stories that inform, hold attention, and earn the return visit."
+msgstr ""
+
+#: patterns/services.php:74
+msgid "Thought-leadership articles"
+msgstr ""
+
+#: patterns/services.php:75
+msgid "Industry insights and analysis"
+msgstr ""
+
+#: patterns/services.php:76
+msgid "Company news and updates"
+msgstr ""
+
+#: patterns/services.php:77
+msgid "Guest-post creation"
+msgstr ""
+
+#: patterns/services.php:89
+msgid "Technical writing"
+msgstr ""
+
+#: patterns/services.php:92
+msgid "Complex information made clear. Technical concepts translated into user guides, documentation, and white papers your audience can actually use."
+msgstr ""
+
+#: patterns/services.php:96
+msgid "User guides and documentation"
+msgstr ""
+
+#: patterns/services.php:97
+msgid "White papers and reports"
+msgstr ""
+
+#: patterns/services.php:98
+msgid "Process documentation"
+msgstr ""
+
+#: patterns/services.php:99
+msgid "Case studies"
+msgstr ""
+
+#: patterns/services.php:111
+msgid "Search-friendly content"
+msgstr ""
+
+#: patterns/services.php:114
+msgid "Content that ranks and reads well. Strategic, keyword-aware writing that improves search visibility while keeping the prose worth a human read."
+msgstr ""
+
+#: patterns/services.php:118
+msgid "Keyword research and strategy"
+msgstr ""
+
+#: patterns/services.php:119
+msgid "Optimised articles"
+msgstr ""
+
+#: patterns/services.php:120
+msgid "Content-gap analysis"
+msgstr ""
+
+#: patterns/services.php:121
+msgid "Meta descriptions and headlines"
+msgstr ""
+
+#: patterns/testimonials.php
+msgctxt "Pattern title"
+msgid "Testimonials — Ink Band (3-up)"
+msgstr ""
+
+#: patterns/testimonials.php
+msgctxt "Pattern description"
+msgid "A deep-teal section with three testimonial cards — a large ochre quote glyph, an italic quote, and a credited author and role."
+msgstr ""
+
+#: patterns/testimonials.php:27
+msgid "Client feedback"
+msgstr ""
+
+#: patterns/testimonials.php:31
+msgid "What clients say"
+msgstr ""
+
+#: patterns/testimonials.php:42
+msgid "They rewrote our website from the ground up. Search rankings climbed within a season, and the writing finally sounds like us."
+msgstr ""
+
+#: patterns/testimonials.php:47
+#: patterns/testimonials.php:65
+#: patterns/testimonials.php:83
+msgid "Sample client name"
+msgstr ""
+
+#: patterns/testimonials.php:50
+msgid "Marketing director, sample company"
+msgstr ""
+
+#: patterns/testimonials.php:60
+msgid "They understood our technical product on the first call and wrote documentation our users actually find helpful. Rare and welcome."
+msgstr ""
+
+#: patterns/testimonials.php:68
+msgid "Founder, sample company"
+msgstr ""
+
+#: patterns/testimonials.php:78
+msgid "Our blog engagement has tripled since they took over the content calendar. Complex topics, made readable, on a steady cadence."
+msgstr ""
+
+#: patterns/testimonials.php:86
+msgid "Chief executive, sample company"
+msgstr ""
+
+#: theme.json
+msgctxt "Color name"
+msgid "Ink Deep"
+msgstr ""
+
+#: theme.json
+msgctxt "Color name"
+msgid "Teal"
+msgstr ""
+
+#: theme.json
+msgctxt "Color name"
+msgid "Teal Light"
+msgstr ""
+
+#: theme.json
+msgctxt "Color name"
+msgid "Teal Tint"
+msgstr ""
+
+#: theme.json
+msgctxt "Color name"
+msgid "Ochre"
+msgstr ""
+
+#: theme.json
+msgctxt "Color name"
+msgid "Ochre Warm"
+msgstr ""
+
+#: theme.json
+msgctxt "Color name"
+msgid "Coral"
+msgstr ""
+
+#: theme.json
+msgctxt "Color name"
+msgid "Ink Primary"
+msgstr ""
+
+#: theme.json
+msgctxt "Color name"
+msgid "Ink Medium"
+msgstr ""
+
+#: theme.json
+msgctxt "Color name"
+msgid "Ink Muted"
+msgstr ""
+
+#: theme.json
+msgctxt "Color name"
+msgid "Cream"
+msgstr ""
+
+#: theme.json
+msgctxt "Color name"
+msgid "Paper White"
+msgstr ""
+
+#: theme.json
+msgctxt "Gradient name"
+msgid "Teal Veil"
+msgstr ""
+
+#: theme.json
+msgctxt "Font family name"
+msgid "Cormorant Garamond"
+msgstr ""
+
+#: theme.json
+msgctxt "Font family name"
+msgid "Newsreader"
+msgstr ""
+
+#: theme.json
+msgctxt "Font family name"
+msgid "DM Sans"
+msgstr ""
+
+#: theme.json
+msgctxt "Font size name"
+msgid "Small"
+msgstr ""
+
+#: theme.json
+msgctxt "Font size name"
+msgid "Base"
+msgstr ""
+
+#: theme.json
+msgctxt "Font size name"
+msgid "Medium"
+msgstr ""
+
+#: theme.json
+msgctxt "Font size name"
+msgid "Large"
+msgstr ""
+
+#: theme.json
+msgctxt "Font size name"
+msgid "X-Large"
+msgstr ""
+
+#: theme.json
+msgctxt "Font size name"
+msgid "2X-Large"
+msgstr ""
+
+#: theme.json
+msgctxt "Font size name"
+msgid "3X-Large"
+msgstr ""
+
+#: theme.json
+msgctxt "Font size name"
+msgid "Display"
+msgstr ""
+
+#: theme.json
+msgctxt "Space size name"
+msgid "1"
+msgstr ""
+
+#: theme.json
+msgctxt "Space size name"
+msgid "2"
+msgstr ""
+
+#: theme.json
+msgctxt "Space size name"
+msgid "3"
+msgstr ""
+
+#: theme.json
+msgctxt "Space size name"
+msgid "4"
+msgstr ""
+
+#: theme.json
+msgctxt "Space size name"
+msgid "5"
+msgstr ""
+
+#: theme.json
+msgctxt "Space size name"
+msgid "6"
+msgstr ""
+
+#: theme.json
+msgctxt "Space size name"
+msgid "8"
+msgstr ""
+
+#: theme.json
+msgctxt "Space size name"
+msgid "10"
+msgstr ""
+
+#: theme.json
+msgctxt "Space size name"
+msgid "12"
+msgstr ""
+
+#: theme.json
+msgctxt "Space size name"
+msgid "16"
+msgstr ""
+
+#: theme.json
+msgctxt "Space size name"
+msgid "20"
+msgstr ""
+
+#: theme.json
+msgctxt "Shadow name"
+msgid "Soft"
+msgstr ""
+
+#: theme.json
+msgctxt "Shadow name"
+msgid "Elevated"
+msgstr ""
+
+#: theme.json
+msgctxt "Shadow name"
+msgid "None"
+msgstr ""
+
+#: theme.json
+msgctxt "Template part name"
+msgid "Header"
+msgstr ""
+
+#: theme.json
+msgctxt "Template part name"
+msgid "Footer"
+msgstr ""
+
+#: theme.json
+msgctxt "Custom template name"
+msgid "Page: Wide (no sidebar)"
+msgstr ""

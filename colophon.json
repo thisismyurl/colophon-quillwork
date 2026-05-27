@@ -1,0 +1,10 @@
+{
+    "name": "Quillwork",
+    "slug": "quillwork",
+    "namespace": "Quillwork",
+    "prefix": "qw",
+    "version": "1.0.0",
+    "colophon_version": "1.2.0",
+    "is_core": false,
+    "overrides": []
+}

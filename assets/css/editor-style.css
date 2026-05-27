@@ -1,0 +1,118 @@
+/* =====================================================================
+   QUILLWORK EDITOR STYLES
+   ---------------------------------------------------------------------
+   [SKIN] Personality rules the block-editor canvas needs but theme.json
+   cannot express — the pseudo-element bits: service-card ghost numerals,
+   the oversized testimonial quote glyph, arrow bullets, and the hover
+   accents on cards and stats. theme.json owns every colour, type, and
+   spacing token here (var(--wp--preset--*)); this file only carries the
+   ::before/::after ornament and :hover motion that theme.json has no
+   syntax for, so the editor mirrors the front end.
+
+   Mirror of the matching rules in style.css @layer components. The editor
+   loads this through add_editor_style() (see inc/setup.php), which wraps
+   the canvas in .editor-styles-wrapper — selectors are scoped to that
+   wrapper by add_editor_style itself, so we do not repeat the .qw-main
+   front-end ancestor here.
+
+   Re-skin: a sibling theme re-authors these rules alongside the
+   style.css @layer components personality they mirror.
+   ===================================================================== */
+@layer components {
+
+	/* ---- Hero italic accent + eyebrow ---- */
+	.qw-hero__accent {
+		display: block;
+		font-style: italic;
+		font-weight: 700;
+		color: var(--wp--preset--color--teal, #1a6b72);
+	}
+
+	.qw-eyebrow {
+		font-family: var(--wp--preset--font-family--dm-sans, sans-serif);
+		font-weight: 500;
+		text-transform: uppercase;
+		letter-spacing: 0.18em;
+		color: var(--wp--preset--color--teal, #1a6b72);
+	}
+
+	/* ---- Numbered service cards ---- */
+	.qw-service-card {
+		padding: var(--wp--preset--spacing--10, 2.5rem) var(--wp--preset--spacing--8, 2rem);
+		background: var(--wp--preset--color--cream, #faf8f5);
+		border-inline-start: 4px solid transparent;
+	}
+	.qw-service-card__number {
+		font-family: var(--wp--preset--font-family--cormorant, serif);
+		font-size: var(--wp--preset--font-size--3xl, 4rem);
+		font-weight: 300;
+		line-height: 1;
+		color: var(--wp--preset--color--ochre, #d4a574);
+		opacity: 0.3;
+	}
+
+	/* ---- Service-card feature list (arrow bullets) ---- */
+	.qw-service-features li {
+		position: relative;
+		padding-block: var(--wp--preset--spacing--2, 0.5rem);
+		padding-inline-start: var(--wp--preset--spacing--5, 1.5rem);
+		font-family: var(--wp--preset--font-family--dm-sans, sans-serif);
+		font-size: var(--wp--preset--font-size--sm, 1rem);
+		color: var(--wp--preset--color--ink-muted, #696969);
+		list-style: none;
+	}
+	/* Decorative arrow — content via ::before keeps it out of the a11y tree. */
+	.qw-service-features li::before {
+		content: "\2192"; /* → */
+		position: absolute;
+		inset-inline-start: 0;
+		font-weight: 700;
+		color: var(--wp--preset--color--teal, #1a6b72);
+	}
+
+	/* ---- Stat cards (about-stats) ---- */
+	.qw-stat { text-align: center; }
+	.qw-stat__number {
+		font-family: var(--wp--preset--font-family--cormorant, serif);
+		font-weight: 700;
+		line-height: 1;
+		color: var(--wp--preset--color--teal, #1a6b72);
+	}
+	.qw-stat__label {
+		font-family: var(--wp--preset--font-family--dm-sans, sans-serif);
+		text-transform: uppercase;
+		letter-spacing: 0.08em;
+		overflow-wrap: break-word;
+		color: var(--wp--preset--color--ink-muted, #696969);
+	}
+
+	/* ---- Testimonial cards (ink band) ---- */
+	.qw-testimonial-card {
+		position: relative;
+		padding: var(--wp--preset--spacing--10, 3rem);
+		background: rgba(255, 255, 255, 0.05);
+		border: 1px solid rgba(255, 255, 255, 0.1);
+	}
+	/* Oversized decorative quote glyph — purely ornamental generated content. */
+	.qw-testimonial-card::before {
+		content: "\201C"; /* “ */
+		position: absolute;
+		inset-block-start: var(--wp--preset--spacing--4, 1rem);
+		inset-inline-start: var(--wp--preset--spacing--6, 2rem);
+		font-family: var(--wp--preset--font-family--cormorant, serif);
+		font-size: var(--wp--preset--font-size--display, 5rem);
+		line-height: 1;
+		color: var(--wp--preset--color--ochre, #d4a574);
+		opacity: 0.3;
+		pointer-events: none;
+	}
+	.qw-testimonial-quote { position: relative; z-index: 1; }
+
+	/* ---- Pull-style about highlight ---- */
+	.qw-highlight {
+		border-inline-start: 4px solid var(--wp--preset--color--coral, #c97d60);
+		background: var(--wp--preset--color--paper-white, #ffffff);
+		padding: var(--wp--preset--spacing--8, 2rem);
+		font-style: italic;
+	}
+}

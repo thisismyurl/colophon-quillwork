@@ -1,0 +1,29 @@
+# Dev-only files excluded from the distributed WordPress.org zip.
+# Everything listed here is documentation or tooling that ships in the repo
+# but has no place in the installable theme package.
+
+ARCHITECTURE.md
+GUIDE.md
+THEME-CHECK.md
+DESIGN-UPLIFT.md
+README.md
+.distignore
+.gitignore
+.git
+.github
+assets/fonts/README.md
+patterns/README.md
+node_modules
+package.json
+package-lock.json
+composer.json
+composer.lock
+phpcs.xml.dist
+phpstan.neon
+
+# Colophon build-time files — the core lives in a sibling dir, but the
+# per-theme identity record and any copied tooling must stay out of the zip.
+colophon
+colophon.json
+colophon.manifest.json
+tools

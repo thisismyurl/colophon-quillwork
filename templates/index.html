@@ -1,0 +1,54 @@
+<!-- wp:template-part {"slug":"header","tagName":"header"} /-->
+
+<!-- wp:group {"tagName":"main","className":"qw-main","metadata":{"name":"Main"},"layout":{"type":"constrained","contentSize":"720px"},"style":{"spacing":{"padding":{"top":"var:preset|spacing|12","bottom":"var:preset|spacing|16"}}}} -->
+<main id="main-content" class="wp-block-group qw-main" style="padding-top:var(--wp--preset--spacing--12);padding-bottom:var(--wp--preset--spacing--16)">
+
+	<!-- wp:group {"className":"qw-index-header","style":{"spacing":{"margin":{"bottom":"var:preset|spacing|12"},"blockGap":"var:preset|spacing|3"}},"layout":{"type":"default"}} -->
+	<div class="wp-block-group qw-index-header" style="margin-bottom:var(--wp--preset--spacing--12)">
+		<!-- wp:paragraph {"className":"is-style-qw-eyebrow qw-eyebrow"} -->
+		<p class="is-style-qw-eyebrow qw-eyebrow">Latest writing</p>
+		<!-- /wp:paragraph -->
+		<!-- wp:query-title {"type":"archive","level":1,"fontSize":"2xl"} /-->
+	</div>
+	<!-- /wp:group -->
+
+	<!-- wp:query {"queryId":0,"query":{"perPage":10,"postType":"post","order":"desc","orderBy":"date","inherit":true},"layout":{"type":"default"}} -->
+	<div class="wp-block-query">
+
+		<!-- wp:post-template {"className":"qw-index-loop","style":{"spacing":{"blockGap":"var:preset|spacing|12"}}} -->
+
+			<!-- wp:group {"className":"qw-story","style":{"spacing":{"padding":{"bottom":"var:preset|spacing|8"}},"border":{"bottom":{"color":"var:preset|color|teal-tint","width":"1px"}}},"layout":{"type":"default"}} -->
+			<div class="wp-block-group qw-story" style="border-bottom-color:var(--wp--preset--color--teal-tint);border-bottom-width:1px;padding-bottom:var(--wp--preset--spacing--8)">
+				<!-- wp:post-terms {"term":"category"} /-->
+				<!-- wp:post-title {"level":2,"isLink":true} /-->
+				<!-- wp:post-excerpt {"moreText":"Continue reading"} /-->
+				<!-- wp:group {"className":"qw-byline","layout":{"type":"flex","flexWrap":"wrap","verticalAlignment":"center"},"style":{"spacing":{"blockGap":"var:preset|spacing|3"}}} -->
+				<div class="wp-block-group qw-byline">
+					<!-- wp:post-author {"showAvatar":false,"showBio":false,"isLink":true} /-->
+					<!-- wp:post-date /-->
+				</div>
+				<!-- /wp:group -->
+			</div>
+			<!-- /wp:group -->
+
+		<!-- /wp:post-template -->
+
+		<!-- wp:query-no-results -->
+			<!-- wp:paragraph {"style":{"spacing":{"padding":{"top":"var:preset|spacing|12","bottom":"var:preset|spacing|12"}}}} -->
+			<p style="padding-top:var(--wp--preset--spacing--12);padding-bottom:var(--wp--preset--spacing--12)">No posts yet. The first words are on their way.</p>
+			<!-- /wp:paragraph -->
+		<!-- /wp:query-no-results -->
+
+		<!-- wp:query-pagination {"layout":{"type":"flex","justifyContent":"center","flexWrap":"wrap"},"style":{"spacing":{"margin":{"top":"var:preset|spacing|12"}}}} -->
+			<!-- wp:query-pagination-previous /-->
+			<!-- wp:query-pagination-numbers /-->
+			<!-- wp:query-pagination-next /-->
+		<!-- /wp:query-pagination -->
+
+	</div>
+	<!-- /wp:query -->
+
+</main>
+<!-- /wp:group -->
+
+<!-- wp:template-part {"slug":"footer","tagName":"footer"} /-->

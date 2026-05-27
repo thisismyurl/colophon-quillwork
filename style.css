@@ -1,0 +1,32 @@
+/*
+Theme Name:         Quillwork
+Theme URI:          https://thisismyurl.com/themes/quillwork
+Author:             Christopher Ross
+Author URI:         https://thisismyurl.com
+Description:        An elegant, literary full-site-editing theme for writers, editors, and personal brands. Light Cormorant Garamond display headlines with italic accents, a calm Newsreader reading column, deep-teal and warm-ochre palette on a cream ground, numbered service cards, and gentle float accents that respect reduced-motion. Zero plugin dependencies, WCAG 2.2 AA accessible, Core Web Vitals optimised, self-hosted OFL fonts, RTL-ready via CSS logical properties.
+Version:            1.0.0
+Requires at least:  7.0
+Tested up to:       7.0
+Requires PHP:       8.1
+License:            GNU General Public License v2 or later
+License URI:        https://www.gnu.org/licenses/gpl-2.0.html
+Text Domain:        quillwork
+Tags:               blog, portfolio, one-column, two-columns, custom-colors, custom-logo, custom-menu, editor-style, featured-images, full-site-editing, block-patterns, accessibility-ready, rtl-language-support, translation-ready, wide-blocks, sticky-post, threaded-comments
+*/
+
+/* =====================================================================
+   QUILLWORK STYLESHEET
+   ---------------------------------------------------------------------
+   This file is the WordPress-required theme identity header and nothing
+   more. Quillwork is built on the Colophon core, which loads its CSS from
+   discrete sheets in cascade order (see inc/assets.php):
+
+     assets/css/core/reset.css   [CORE]  @layer order + design-agnostic reset
+     assets/css/core/base.css    [CORE]  a11y scaffolding + --cl-* token contract
+     assets/css/skin.css         [SKIN]  Quillwork's layout/components/blocks/utilities
+
+   There is intentionally no @layer body here — the screen styles live in the
+   sheets above. Block themes do not auto-enqueue style.css on the front end;
+   the header is read by WordPress for theme identity (Name, Theme URI, etc.),
+   and the Theme URI is what resolves the footer credit link.
+   ===================================================================== */

@@ -1,0 +1,91 @@
+/*
+ * [CORE] Get-started admin page styles.
+ *
+ * Enqueued only on the appearance_page_quillwork-get-started screen (see
+ * inc/admin.php enqueue_get_started_assets). Nothing here leaks to other admin
+ * screens. Intentionally minimal — it leans on wp-admin defaults and only adds
+ * a readable measure, section rhythm, and the responsive video frame.
+ *
+ * @package quillwork
+ */
+
+.quillwork-get-started {
+	max-width: 50rem;
+}
+
+.quillwork-get-started__lead {
+	font-size: 1.05rem;
+	line-height: 1.6;
+	max-width: 42rem;
+}
+
+.quillwork-get-started h2 {
+	margin-top: 2.25rem;
+	padding-top: 1.25rem;
+	border-top: 1px solid #dcdcde;
+}
+
+.quillwork-get-started__steps {
+	max-width: 42rem;
+	line-height: 1.6;
+}
+
+.quillwork-get-started__steps li {
+	margin-bottom: 1rem;
+}
+
+.quillwork-get-started__steps strong {
+	display: block;
+}
+
+/* Two-up on wide screens, stacked on narrow. */
+.quillwork-get-started__videos {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+	gap: 1.5rem;
+	margin-top: 1rem;
+	max-width: 50rem;
+}
+
+.quillwork-video {
+	margin: 0;
+}
+
+.quillwork-video__title {
+	font-weight: 600;
+	margin-bottom: 0.5rem;
+}
+
+/* 16:9 responsive frame — fills its grid column, holds ratio at any width. */
+.quillwork-video__frame {
+	position: relative;
+	aspect-ratio: 16 / 9;
+	background: #1d2327;
+	border-radius: 4px;
+	overflow: hidden;
+}
+
+.quillwork-video__frame iframe {
+	position: absolute;
+	inset: 0;
+	width: 100%;
+	height: 100%;
+	border: 0;
+}
+
+/* "Video coming soon" — calm, centred, no broken-iframe chrome. */
+.quillwork-video__placeholder {
+	position: absolute;
+	inset: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: #c3c4c7;
+	font-size: 0.95rem;
+	letter-spacing: 0.02em;
+}
+
+.quillwork-welcome-notice__dismiss {
+	margin-left: 0.75rem;
+	text-decoration: none;
+}
