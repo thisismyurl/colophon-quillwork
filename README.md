@@ -91,8 +91,42 @@ Active.
 
 ---
 
+## Support and donations
+
+I build this free theme line because the open web works better when good tools are free. The themes are free to use, with no tracking, no ads, and no upsell.
+
+If one of them saves you time, here are the genuine ways to help:
+
+- **Sponsor the work.** [GitHub Sponsors](https://github.com/sponsors/thisismyurl) is the simplest way, and the Sponsor button at the top of this repo lists it alongside Bitcoin, Dogecoin, PayPal, and Interac e-transfer. Any amount helps, and none of it is expected.
+- **Contribute code or ideas.** A pull request or a bug report on the [Issues](../../issues) tab is worth as much as a donation.
+- **Share it.** A note on [WordPress.org](https://profiles.wordpress.org/thisismyurl/), [GitHub](https://github.com/thisismyurl), or [LinkedIn](https://linkedin.com/in/thisismyurl) helps other people find work that might save them the same afternoon.
+
+### Report issues and questions
+
+- **Found a bug or want a feature?** Open an issue on the [Issues](../../issues) tab.
+- **Have a question?** Start a thread on the [Discussions](../../discussions) tab.
+
+## About This Is My URL
+
+This theme is built and maintained by [This Is My URL](https://thisismyurl.com/), the WordPress development and technical SEO practice of Christopher Ross. I help teams build WordPress sites that stay secure, fast, and maintainable, and I build a small, free theme line for people who want a real accessibility and performance floor without starting from scratch.
+
+### My background
+
+- On the web since 1996, and in WordPress since 2007
+- WordPress.org plugin developer with 19 plugins published since 2009
+- Technical SEO practitioner focused on performance, security, and search visibility
+- Lead instructor and curriculum architect at the M.L. Campbell Training Center, the Sherwin-Williams® international training facility for its industrial wood division
+
+### Ways to connect
+
+- **Website:** [thisismyurl.com](https://thisismyurl.com/)
+- **WordPress.org:** [profiles.wordpress.org/thisismyurl](https://profiles.wordpress.org/thisismyurl/)
+- **GitHub:** [github.com/thisismyurl](https://github.com/thisismyurl)
+- **LinkedIn:** [linkedin.com/in/thisismyurl](https://linkedin.com/in/thisismyurl)
+
 ## License
 
-GNU General Public License v2.0 or later. See [LICENSE](./LICENSE).
+GNU General Public License v2.0 or later — see [LICENSE](./LICENSE).
 
-Built by [Christopher Ross](https://thisismyurl.com).
+---
+*This project follows the [10 Core Pillars](PILLARS.md). Support quality work [here](https://github.com/sponsors/thisismyurl).*
