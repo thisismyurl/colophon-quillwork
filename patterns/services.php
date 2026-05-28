@@ -39,7 +39,7 @@ defined( 'ABSPATH' ) || exit;
 		<!-- wp:group {"className":"is-style-qw-service-card qw-service-card","layout":{"type":"default"},"style":{"spacing":{"blockGap":"var:preset|spacing|3"}}} -->
 		<div class="wp-block-group is-style-qw-service-card qw-service-card">
 			<!-- wp:paragraph {"className":"qw-service-card__number"} -->
-			<p class="qw-service-card__number" aria-hidden="true">01</p>
+			<p class="qw-service-card__number">01</p>
 			<!-- /wp:paragraph -->
 			<!-- wp:heading {"level":3,"fontSize":"lg"} -->
 			<h3 class="wp-block-heading has-lg-font-size"><?php esc_html_e( 'Marketing content', 'quillwork' ); ?></h3>
@@ -61,7 +61,7 @@ defined( 'ABSPATH' ) || exit;
 		<!-- wp:group {"className":"is-style-qw-service-card qw-service-card","layout":{"type":"default"},"style":{"spacing":{"blockGap":"var:preset|spacing|3"}}} -->
 		<div class="wp-block-group is-style-qw-service-card qw-service-card">
 			<!-- wp:paragraph {"className":"qw-service-card__number"} -->
-			<p class="qw-service-card__number" aria-hidden="true">02</p>
+			<p class="qw-service-card__number">02</p>
 			<!-- /wp:paragraph -->
 			<!-- wp:heading {"level":3,"fontSize":"lg"} -->
 			<h3 class="wp-block-heading has-lg-font-size"><?php esc_html_e( 'Blog and editorial', 'quillwork' ); ?></h3>
@@ -83,7 +83,7 @@ defined( 'ABSPATH' ) || exit;
 		<!-- wp:group {"className":"is-style-qw-service-card qw-service-card","layout":{"type":"default"},"style":{"spacing":{"blockGap":"var:preset|spacing|3"}}} -->
 		<div class="wp-block-group is-style-qw-service-card qw-service-card">
 			<!-- wp:paragraph {"className":"qw-service-card__number"} -->
-			<p class="qw-service-card__number" aria-hidden="true">03</p>
+			<p class="qw-service-card__number">03</p>
 			<!-- /wp:paragraph -->
 			<!-- wp:heading {"level":3,"fontSize":"lg"} -->
 			<h3 class="wp-block-heading has-lg-font-size"><?php esc_html_e( 'Technical writing', 'quillwork' ); ?></h3>
@@ -105,7 +105,7 @@ defined( 'ABSPATH' ) || exit;
 		<!-- wp:group {"className":"is-style-qw-service-card qw-service-card","layout":{"type":"default"},"style":{"spacing":{"blockGap":"var:preset|spacing|3"}}} -->
 		<div class="wp-block-group is-style-qw-service-card qw-service-card">
 			<!-- wp:paragraph {"className":"qw-service-card__number"} -->
-			<p class="qw-service-card__number" aria-hidden="true">04</p>
+			<p class="qw-service-card__number">04</p>
 			<!-- /wp:paragraph -->
 			<!-- wp:heading {"level":3,"fontSize":"lg"} -->
 			<h3 class="wp-block-heading has-lg-font-size"><?php esc_html_e( 'Search-friendly content', 'quillwork' ); ?></h3>

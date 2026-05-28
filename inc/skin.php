@@ -208,7 +208,7 @@ add_filter(
 		$default['developers'] = array(
 			/* translators: %s: linked "build-on-Quillwork guide" anchor. */
 			'text'  => __( 'Quillwork is built on a small, documented core meant to be reused. If you want to build your own theme on top of it, the %s walks through how.', 'quillwork' ),
-			'url'   => 'https://thisismyurl.com/themes/quillwork/develop',
+			'url'   => 'https://thisismyurl.com/quillwork/develop',
 			'label' => __( 'build-on-Quillwork guide', 'quillwork' ),
 		);
 
@@ -216,19 +216,3 @@ add_filter(
 	}
 );
 
-/**
- * Point the Get-started page's two video slots at the published course tutorials.
- *
- * The core renders a "coming soon" placeholder for any empty UID; these are the
- * Cloudflare Stream UIDs for the matching course-5601 lessons — "Setting up your
- * site" and "Optimizing your site" — so the page shows the real videos.
- */
-add_filter(
-	'quillwork/get_started_videos',
-	static function (): array {
-		return array(
-			array( 'uid' => 'b79d9bd4564c2651d24dbe52127dbfb8', 'title' => __( 'Setting up your site', 'quillwork' ) ),
-			array( 'uid' => 'ee88879539bbfaef2cba32d92547c451', 'title' => __( 'Optimizing your site', 'quillwork' ) ),
-		);
-	}
-);

@@ -4,9 +4,8 @@
  *
  * This is the mechanism, and it's portable. Every theme in the line inherits a
  * WordPress.org-compliant onboarding flow for free; the WORDS on the page come
- * from the theme, supplied through the `quillwork/get_started_content` and
- * `quillwork/get_started_videos` filters (inc/skin.php is the conventional home
- * for them). Core ships a plain, honest default so the page is coherent even
+ * from the theme, supplied through the `quillwork/get_started_content` filter
+ * (inc/skin.php is the conventional home for it). Core ships a plain, honest default so the page is coherent even
  * before a theme writes its own copy.
  *
  * WordPress.org compliance note (load-bearing — do not "improve" this away):
@@ -248,71 +247,6 @@ function get_started_content(): array {
 }
 
 /**
- * The Cloudflare Stream video UIDs surfaced on the Get-started page.
- *
- * Empty strings are intentional placeholders: the page renders a tasteful
- * "coming soon" state for any empty UID instead of a broken iframe, so the page
- * ships before the videos do. A theme supplies real UIDs through the filter.
- *
- * @return array<int,array{uid:string,title:string}> Ordered video definitions.
- */
-function get_started_videos(): array {
-	$videos = array(
-		array(
-			'uid'   => '',
-			'title' => esc_html__( 'Setting up your site', 'quillwork' ),
-		),
-		array(
-			'uid'   => '',
-			'title' => esc_html__( 'Optimizing your site', 'quillwork' ),
-		),
-	);
-
-	/**
-	 * Filters the Get-started page video list.
-	 *
-	 * Each entry is array{ uid: string, title: string }. The uid is a Cloudflare
-	 * Stream video UID; an empty string renders the "coming soon" placeholder.
-	 *
-	 * @since 1.0.0
-	 *
-	 * @param array<int,array{uid:string,title:string}> $videos Ordered video definitions.
-	 */
-	return (array) apply_filters( 'quillwork/get_started_videos', $videos );
-}
-
-/**
- * Render one Cloudflare Stream player, or the "coming soon" placeholder.
- *
- * @param array{uid:string,title:string} $video A single video definition.
- */
-function render_stream_video( array $video ): void {
-	$uid   = isset( $video['uid'] ) ? (string) $video['uid'] : '';
-	$title = isset( $video['title'] ) ? (string) $video['title'] : '';
-
-	echo '<figure class="quillwork-video">';
-	echo '<figcaption class="quillwork-video__title">' . esc_html( $title ) . '</figcaption>';
-	echo '<div class="quillwork-video__frame">';
-
-	if ( '' === $uid ) {
-		echo '<div class="quillwork-video__placeholder" role="img" aria-label="'
-			. esc_attr__( 'Video coming soon', 'quillwork' ) . '">';
-		echo '<span>' . esc_html__( 'Video coming soon', 'quillwork' ) . '</span>';
-		echo '</div>';
-	} else {
-		$src = sprintf( 'https://iframe.videodelivery.net/%s', rawurlencode( $uid ) );
-		printf(
-			'<iframe src="%1$s" title="%2$s" loading="lazy" allow="accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture;" allowfullscreen></iframe>',
-			esc_url( $src ),
-			esc_attr( $title )
-		);
-	}
-
-	echo '</div>'; // .quillwork-video__frame
-	echo '</figure>';
-}
-
-/**
  * Render the "Get started" page.
  *
  * One <h1>, then <h2> sections in reading order. All dynamic output is escaped
@@ -383,20 +317,6 @@ function render_get_started_page(): void {
 				printf( esc_html( $dev['text'] ), $link ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
 				?>
 			</p>
-		<?php endif; ?>
-
-		<?php $videos = get_started_videos(); ?>
-		<?php if ( ! empty( $videos ) ) : ?>
-			<h2><?php esc_html_e( 'Watch', 'quillwork' ); ?></h2>
-			<div class="quillwork-get-started__videos">
-				<?php
-				foreach ( $videos as $video ) {
-					if ( is_array( $video ) ) {
-						render_stream_video( $video );
-					}
-				}
-				?>
-			</div>
 		<?php endif; ?>
 
 	</div>
