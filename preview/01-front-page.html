@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=1200">
+<title>Quillwork — Front Page</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Newsreader:ital,opsz,wght@0,6..72,300..700;1,6..72,300..700&family=DM+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="quillwork-preview.css">
+<style>
+  /* Compact hero for 900px viewport — shows hero + first service cards */
+  .qw-hero {
+    min-block-size: 520px;
+    height: 520px;
+    padding-block-end: var(--wp--preset--spacing--10);
+  }
+  .qw-section { padding-block: var(--wp--preset--spacing--10); }
+</style>
+</head>
+<body>
+
+<header class="qw-header">
+  <div class="qw-header__inner">
+    <a class="qw-site-title" href="#">Quillwork</a>
+    <nav class="qw-nav">
+      <a href="#">Work</a>
+      <a href="#">Services</a>
+      <a href="#">Studio</a>
+      <a href="#">Journal</a>
+    </nav>
+    <a class="qw-cta-btn" href="#">Start a Brief</a>
+  </div>
+</header>
+
+<main class="qw-main">
+
+  <!-- Hero -->
+  <section class="qw-hero qw-section--cream">
+    <div aria-hidden="true" class="qw-float-accent"></div>
+    <div class="qw-hero__inner" style="max-width: 100%; padding-inline: 0;">
+      <div class="qw-eyebrow">Brand · Type · Identity</div>
+      <h1 class="qw-hero__title">
+        Design for<br>
+        <span class="qw-hero__accent">enduring</span><br>
+        work.
+      </h1>
+      <p class="qw-hero__sub">
+        An independent studio specialising in visual identities, editorial systems, and type-led design for publishers, cultural institutions, and independent makers.
+      </p>
+      <a class="qw-cta-btn" href="#">View Selected Work</a>
+    </div>
+  </section>
+
+  <!-- Services glimpse -->
+  <section class="qw-section qw-section--white">
+    <div class="qw-constrained">
+      <div class="qw-eyebrow">Services</div>
+      <div class="qw-service-cards">
+        <div class="qw-service-card">
+          <div class="qw-service-card__number">01</div>
+          <div class="qw-service-card__title">Brand Identity</div>
+          <p class="qw-service-card__body">Wordmarks, visual systems, and brand guidelines built to last twenty years, not two.</p>
+        </div>
+        <div class="qw-service-card">
+          <div class="qw-service-card__number">02</div>
+          <div class="qw-service-card__title">Type Direction</div>
+          <p class="qw-service-card__body">Custom type pairing and variable-font implementation — the typographic voice of your brand.</p>
+        </div>
+        <div class="qw-service-card">
+          <div class="qw-service-card__number">03</div>
+          <div class="qw-service-card__title">Editorial Design</div>
+          <p class="qw-service-card__body">Book series templates, magazine grids, annual reports — print and digital in one system.</p>
+        </div>
+        <div class="qw-service-card">
+          <div class="qw-service-card__number">04</div>
+          <div class="qw-service-card__title">Web &amp; Screen</div>
+          <p class="qw-service-card__body">WordPress FSE themes and component systems that carry the identity online without losing it.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="qw-footer">
+  <div class="qw-footer__inner">
+    <div>
+      <div class="qw-footer__brand-name">Quillwork</div>
+      <p class="qw-footer__tagline">Independent design studio.<br>Montreal, Quebec.</p>
+    </div>
+    <div>
+      <div class="qw-footer__heading">Studio</div>
+      <nav class="qw-footer__links">
+        <a href="#">Work</a>
+        <a href="#">Services</a>
+        <a href="#">About</a>
+        <a href="#">Journal</a>
+      </nav>
+    </div>
+    <div>
+      <div class="qw-footer__heading">Contact</div>
+      <nav class="qw-footer__links">
+        <a href="#">Start a Brief</a>
+        <a href="#">studio@quillwork.co</a>
+        <a href="#">Instagram</a>
+      </nav>
+    </div>
+  </div>
+  <div class="qw-footer__bottom">
+    <span>&copy; 2024 Quillwork</span>
+    <span>Built with WordPress &amp; <a href="https://thisismyurl.com/quillwork/">Quillwork</a></span>
+  </div>
+</footer>
+
+</body>
+</html>
