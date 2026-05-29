@@ -1,0 +1,90 @@
+<!-- Search template for Quillwork.
+     A writer's site publishes dozens or hundreds of essays, long-form pieces,
+     and case studies. Search is how a returning reader finds "that piece about
+     X I remember reading." This template treats search as a first-class
+     reading surface, not a fallback page.
+
+     The search term appears in the heading in Cormorant Garamond weight 300 —
+     the same register as post titles — so "Search results for 'climate'" reads
+     as a literary index heading, not a database query label.
+
+     Results use the same typographic list format as the archive: title, excerpt
+     at reading weight, date, category. No cards, no thumbnails. The words are
+     the result. -->
+
+<!-- wp:template-part {"slug":"header","tagName":"header"} /-->
+
+<!-- wp:group {"tagName":"main","className":"qw-main qw-search-page","id":"main-content","layout":{"type":"constrained","contentSize":"720px"},"style":{"spacing":{"padding":{"top":"var:preset|spacing|12","bottom":"var:preset|spacing|20"}}}} -->
+<main id="main-content" class="wp-block-group qw-main qw-search-page" style="padding-top:var(--wp--preset--spacing--12);padding-bottom:var(--wp--preset--spacing--20)">
+
+	<!-- Search header -->
+	<!-- wp:group {"className":"qw-search-header","style":{"spacing":{"blockGap":"var:preset|spacing|4","padding":{"bottom":"var:preset|spacing|10"},"margin":{"bottom":"var:preset|spacing|10"}},"border":{"bottom":{"color":"var:preset|color|teal-tint","width":"1px"}}},"layout":{"type":"default"}} -->
+	<div class="wp-block-group qw-search-header" style="padding-bottom:var(--wp--preset--spacing--10);margin-bottom:var(--wp--preset--spacing--10);border-bottom:1px solid var(--wp--preset--color--teal-tint)">
+
+		<!-- Eyebrow label -->
+		<!-- wp:paragraph {"className":"is-style-qw-eyebrow","style":{"color":{"text":"var:preset|color|ink-muted"}}} -->
+		<p class="is-style-qw-eyebrow" style="color:var(--wp--preset--color--ink-muted)">Search results</p>
+		<!-- /wp:paragraph -->
+
+		<!-- Search heading: displays "Results for: {term}" in Cormorant -->
+		<!-- wp:query-title {"type":"search","textAlign":"left","style":{"typography":{"fontFamily":"var:preset|font-family|cormorant","fontWeight":"300","letterSpacing":"-0.01em","lineHeight":"1.1"},"color":{"text":"var:preset|color|ink-deep"}},"fontSize":"2xl"} /-->
+
+		<!-- Search form: repeat the search without leaving the results page -->
+		<!-- wp:search {"label":"Search again","showLabel":false,"placeholder":"Search your writing archive…","buttonText":"Search","buttonPosition":"button-outside","buttonUseIcon":false,"style":{"border":{"radius":"0"},"spacing":{"margin":{"top":"var:preset|spacing|6"}}}} /-->
+
+	</div>
+	<!-- /wp:group -->
+
+	<!-- Results query: inherit:true so it uses the search query from the URL -->
+	<!-- wp:query {"queryId":1,"query":{"postType":"post","order":"desc","orderBy":"relevance","inherit":true},"layout":{"type":"default"}} -->
+	<div class="wp-block-query">
+
+		<!-- wp:post-template {"layout":{"type":"default"}} -->
+
+			<!-- Each result: a typographic list entry — title, excerpt, metadata -->
+			<!-- wp:group {"className":"qw-search-result","style":{"spacing":{"blockGap":"var:preset|spacing|3","padding":{"bottom":"var:preset|spacing|10"},"margin":{"bottom":"var:preset|spacing|10"}},"border":{"bottom":{"color":"var:preset|color|teal-tint","width":"1px"}}},"layout":{"type":"default"}} -->
+			<div class="wp-block-group qw-search-result" style="padding-bottom:var(--wp--preset--spacing--10);margin-bottom:var(--wp--preset--spacing--10);border-bottom:1px solid var(--wp--preset--color--teal-tint)">
+
+				<!-- wp:group {"layout":{"type":"flex","flexWrap":"wrap","verticalAlignment":"center"},"style":{"spacing":{"blockGap":"var:preset|spacing|3","margin":{"bottom":"var:preset|spacing|2"}}}} -->
+				<div class="wp-block-group" style="margin-bottom:var(--wp--preset--spacing--2)">
+					<!-- wp:post-terms {"term":"category"} /-->
+					<!-- wp:post-date /-->
+				</div>
+				<!-- /wp:group -->
+
+				<!-- wp:post-title {"level":2,"isLink":true,"style":{"typography":{"fontFamily":"var:preset|font-family|cormorant","fontWeight":"400","letterSpacing":"-0.01em","textDecoration":"none"},"color":{"text":"var:preset|color|ink-deep"}},"fontSize":"xl"} /-->
+
+				<!-- wp:post-excerpt {"moreText":"","numberOfWords":30,"style":{"typography":{"fontFamily":"var:preset|font-family|newsreader","lineHeight":"1.75"},"color":{"text":"var:preset|color|ink-medium"}}} /-->
+
+			</div>
+			<!-- /wp:group -->
+
+		<!-- /wp:post-template -->
+
+		<!-- No results: helpful prompt, not a dead end -->
+		<!-- wp:query-no-results -->
+			<!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|10","bottom":"var:preset|spacing|10"},"blockGap":"var:preset|spacing|4"}},"layout":{"type":"default"}} -->
+			<div class="wp-block-group" style="padding-top:var(--wp--preset--spacing--10);padding-bottom:var(--wp--preset--spacing--10)">
+				<!-- wp:paragraph {"style":{"typography":{"fontFamily":"var:preset|font-family|newsreader","lineHeight":"1.75"},"color":{"text":"var:preset|color|ink-medium"}}} -->
+				<p style="color:var(--wp--preset--color--ink-medium)">No results for that search. Try a different term, or browse the archive below.</p>
+				<!-- /wp:paragraph -->
+				<!-- wp:paragraph {"className":"is-style-qw-eyebrow"} -->
+				<p class="is-style-qw-eyebrow"><a href="/archive">Browse all writing &rarr;</a></p>
+				<!-- /wp:paragraph -->
+			</div>
+			<!-- /wp:group -->
+		<!-- /wp:query-no-results -->
+
+		<!-- wp:query-pagination {"layout":{"type":"flex","justifyContent":"space-between"},"style":{"spacing":{"margin":{"top":"var:preset|spacing|12"}}}} -->
+			<!-- wp:query-pagination-previous /-->
+			<!-- wp:query-pagination-numbers /-->
+			<!-- wp:query-pagination-next /-->
+		<!-- /wp:query-pagination -->
+
+	</div>
+	<!-- /wp:query -->
+
+</main>
+<!-- /wp:group -->
+
+<!-- wp:template-part {"slug":"footer","tagName":"footer"} /-->

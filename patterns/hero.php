@@ -19,9 +19,14 @@ defined( 'ABSPATH' ) || exit;
 <!-- wp:group {"className":"qw-hero qw-section qw-section--cream","layout":{"type":"constrained","contentSize":"1280px"},"style":{"spacing":{"padding":{"top":"var:preset|spacing|16","bottom":"var:preset|spacing|16"}}}} -->
 <div class="wp-block-group qw-hero qw-section qw-section--cream" style="padding-top:var(--wp--preset--spacing--16);padding-bottom:var(--wp--preset--spacing--16)">
 
-	<!-- wp:html -->
-	<div class="qw-float-accent" aria-hidden="true"></div>
-	<!-- /wp:html -->
+	<!-- Decorative float accent: a warm ochre shape that drifts behind the headline.
+	     wp:group with role="presentation" — no interactive element, no readable
+	     content, ignored by screen readers. The CSS animation (skin.css @layer
+	     components) respects prefers-reduced-motion: if motion is reduced, the
+	     accent renders as a static shape; if not, it floats. -->
+	<!-- wp:group {"className":"qw-float-accent","metadata":{"name":"Decorative Float Accent"},"style":{"spacing":{"margin":{"top":"0","bottom":"0"}}},"layout":{"type":"default"}} -->
+	<div class="wp-block-group qw-float-accent" role="presentation" aria-hidden="true"></div>
+	<!-- /wp:group -->
 
 	<!-- wp:group {"className":"qw-hero__content","style":{"spacing":{"blockGap":"var:preset|spacing|6"}},"layout":{"type":"constrained","contentSize":"900px","justifyContent":"left"}} -->
 	<div class="wp-block-group qw-hero__content">
